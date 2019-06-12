@@ -135,6 +135,11 @@ android {
             }
         }
     }
+
+    packagingOptions {
+        pickFirst '**/libjsc.so'
+        pickFirst '**/libc++_shared.so'
+    }
 }
 
 repositories {
@@ -143,20 +148,18 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 
-configurations.all {
-    resolutionStrategy {
-        force 'org.webkit:android-jsc:r236355'
-    }
-}
 
 dependencies {
+    // Make sure to put android-jsc at the the first
+    implementation "org.webkit:android-jsc:r241213"
+
     implementation project(':react-native-video')
     implementation project(':react-native-svg')
     implementation project(':react-native-aztec')
     implementation project(':react-native-recyclerview-list')
     implementation project(':react-native-gutenberg-bridge')
     implementation "org.wordpress:utils:$wordpressUtilsVersion"
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation "com.facebook.react:react-native:+"  // From node_modules
 }
 
