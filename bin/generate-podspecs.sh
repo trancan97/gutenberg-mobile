@@ -33,6 +33,7 @@ node_modules/react-native/Libraries/LinkingIOS/React-RCTLinking.podspec
 node_modules/react-native/Libraries/Settings/React-RCTSettings.podspec
 node_modules/react-native/Libraries/Text/React-RCTText.podspec
 node_modules/react-native/Libraries/Vibration/React-RCTVibration.podspec
+node_modules/react-native/ReactCommon/React-Fabric.podspec
 EOP
 )
 

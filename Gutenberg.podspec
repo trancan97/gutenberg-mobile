@@ -27,5 +27,5 @@ Pod::Spec.new do |s|
   s.dependency 'WordPress-Aztec-iOS'
   s.dependency 'RNTAztecView'
 
-  s.dependency 'yoga', "#{react_native_version}.React"
+#  s.dependency 'yoga', "#{react_native_version}.React"
 end
