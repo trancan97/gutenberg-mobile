@@ -38,7 +38,7 @@
   "frameworks": "JavaScriptCore",
   "libraries": "stdc++",
   "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "\"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/Folly\""
+    "HEADER_SEARCH_PATHS": "\"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/Folly\" \"$(PODS_ROOT)/React-Fabric\""
   },
   "dependencies": {
     "Folly": [
@@ -52,6 +52,6 @@
     ],
     "yoga": [
       "0.60.0-rc.1.React"
-    ]
+	]
   }
 }
