@@ -10,20 +10,30 @@ cd ..
 # Check for cocoapods
 command -v pod > /dev/null || ( echo Cocoapods is required to generate podspecs; exit 1 )
 
-PODSPECS=$(cat <<EOP
-node_modules/react-native/React.podspec
-node_modules/react-native/ReactCommon/yoga/yoga.podspec
-node_modules/react-native/third-party-podspecs/Folly.podspec
-node_modules/react-native/third-party-podspecs/DoubleConversion.podspec
-node_modules/react-native/third-party-podspecs/glog.podspec
-EOP
-)
+# Change to the React Native directory to get relative paths
+WD=$(pwd)
+cd "node_modules/react-native"
 
-DEST="react-native-gutenberg-bridge/third-party-podspecs"
+RN_PODSPECS=$(find * -type f -name "*.podspec" -not -path "./third-party-podspecs/*" -print)
+EXTERNAL_PODSPECS=$(find "third-party-podspecs" -type f -name "*.podspec" -print)
 
-for podspec in $PODSPECS
+DEST="${WD}/react-native-gutenberg-bridge/third-party-podspecs"
+TMP_DEST=$(mktemp -d)
+
+for podspec in $RN_PODSPECS
 do
-    pod=`basename $podspec .podspec`
+    pod=$(basename "$podspec" .podspec)
+    path=$(dirname "$podspec")
+
+    echo "Generating podspec for $pod with path $path"
+    pod ipc spec $podspec > "$TMP_DEST/$pod.podspec.json"
+    ${WD}/bin/process-podspec.rb "$TMP_DEST/$pod.podspec.json" "$path" > "$DEST/$pod.podspec.json"
+done
+
+for podspec in $EXTERNAL_PODSPECS
+do
+    pod=$(basename "$podspec" .podspec)
+
     echo "Generating podspec for $pod"
-    INSTALL_YOGA_WITHOUT_PATH_OPTION=1 pod ipc spec $podspec > "$DEST/$pod.podspec.json"
+    pod ipc spec $podspec > "$DEST/$pod.podspec.json"
 done

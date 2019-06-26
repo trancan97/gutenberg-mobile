@@ -7,4 +7,4 @@
 #import <React/RCTViewManager.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-#import <React/RCTImageLoader.h>
+#import <RCTImage/RCTImageLoader.h>

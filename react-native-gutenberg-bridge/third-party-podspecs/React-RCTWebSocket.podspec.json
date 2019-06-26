@@ -1,0 +1,29 @@
+{
+  "name": "React-RCTWebSocket",
+  "version": "1000.0.0",
+  "summary": "A library for supporting WebSockets, a protocol which provides full-duplex communication channels over a single TCP connection.",
+  "homepage": "http://facebook.github.io/react-native/",
+  "documentation_url": "https://facebook.github.io/react-native/docs/network#websocket-support",
+  "license": "MIT",
+  "authors": "Facebook, Inc. and its affiliates",
+  "platforms": {
+    "ios": "9.0",
+    "tvos": "9.2"
+  },
+  "source": {
+    "git": "https://github.com/jtreanor/react-native.git",
+    "commit": "9ad7fc78733c53f5583a48a240f6850d23913a1c"
+  },
+  "source_files": "Libraries/WebSocket/*.{h,m}",
+  "preserve_paths": [
+    "Libraries/WebSocket/package.json",
+    "Libraries/WebSocket/LICENSE",
+    "Libraries/WebSocket/LICENSE-docs"
+  ],
+  "header_dir": "RCTWebSocket",
+  "dependencies": {
+    "React-Core": [
+      "1000.0.0"
+    ]
+  }
+}

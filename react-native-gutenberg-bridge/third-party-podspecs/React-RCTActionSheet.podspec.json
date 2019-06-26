@@ -1,0 +1,29 @@
+{
+  "name": "React-RCTActionSheet",
+  "version": "1000.0.0",
+  "summary": "An API for displaying iOS action sheets and share sheets.",
+  "homepage": "http://facebook.github.io/react-native/",
+  "documentation_url": "https://facebook.github.io/react-native/docs/actionsheetios",
+  "license": "MIT",
+  "authors": "Facebook, Inc. and its affiliates",
+  "platforms": {
+    "ios": "9.0",
+    "tvos": "9.2"
+  },
+  "source": {
+    "git": "https://github.com/jtreanor/react-native.git",
+    "commit": "9ad7fc78733c53f5583a48a240f6850d23913a1c"
+  },
+  "source_files": "Libraries/ActionSheetIOS/*.{h,m}",
+  "preserve_paths": [
+    "Libraries/ActionSheetIOS/package.json",
+    "Libraries/ActionSheetIOS/LICENSE",
+    "Libraries/ActionSheetIOS/LICENSE-docs"
+  ],
+  "header_dir": "RCTActionSheet",
+  "dependencies": {
+    "React-Core": [
+      "1000.0.0"
+    ]
+  }
+}

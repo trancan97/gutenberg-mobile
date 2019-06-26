@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.preserve_paths = 'bundle/ios/*'
 
+  s.dependency 'React'
   s.dependency 'React-Core'#, react_native_version
   s.dependency 'React-cxxreact'#, react_native_version
   s.dependency 'React-RCTAnimation'#, react_native_version

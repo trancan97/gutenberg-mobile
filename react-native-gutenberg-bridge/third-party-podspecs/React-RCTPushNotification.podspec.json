@@ -1,0 +1,29 @@
+{
+  "name": "React-RCTPushNotification",
+  "version": "1000.0.0",
+  "summary": "A library for handling push notifications for your app, including permission handling and icon badge number.",
+  "homepage": "http://facebook.github.io/react-native/",
+  "documentation_url": "https://facebook.github.io/react-native/docs/pushnotificationios",
+  "license": "MIT",
+  "authors": "Facebook, Inc. and its affiliates",
+  "platforms": {
+    "ios": "9.0",
+    "tvos": "9.2"
+  },
+  "source": {
+    "git": "https://github.com/jtreanor/react-native.git",
+    "commit": "9ad7fc78733c53f5583a48a240f6850d23913a1c"
+  },
+  "source_files": "Libraries/PushNotificationIOS/*.{h,m}",
+  "preserve_paths": [
+    "Libraries/PushNotificationIOS/package.json",
+    "Libraries/PushNotificationIOS/LICENSE",
+    "Libraries/PushNotificationIOS/LICENSE-docs"
+  ],
+  "header_dir": "RCTPushNotification",
+  "dependencies": {
+    "React-Core": [
+      "1000.0.0"
+    ]
+  }
+}
