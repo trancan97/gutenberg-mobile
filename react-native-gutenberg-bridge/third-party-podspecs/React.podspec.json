@@ -15,9 +15,9 @@
     "commit": "9ad7fc78733c53f5583a48a240f6850d23913a1c"
   },
   "preserve_paths": [
-    "./package.json",
-    "./LICENSE",
-    "./LICENSE-docs"
+    "package.json",
+    "LICENSE",
+    "LICENSE-docs"
   ],
   "cocoapods_version": ">= 1.2.0",
   "dependencies": {
@@ -57,5 +57,6 @@
     "React-RCTWebSocket": [
       "1000.0.0"
     ]
-  }
+  },
+  "prepare_command": "TMP_DIR=$(mktemp -d); mv * $TMP_DIR; cp -R \"$TMP_DIR/.\"/* ."
 }

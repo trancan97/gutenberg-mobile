@@ -14,8 +14,8 @@
     "commit": "9ad7fc78733c53f5583a48a240f6850d23913a1c"
   },
   "source_files": [
-    "React/DevSupport/*",
-    "React/Inspector/*"
+    "DevSupport/*",
+    "Inspector/*"
   ],
   "header_dir": "DevSupport",
   "dependencies": {
@@ -28,5 +28,6 @@
     "React-RCTWebSocket": [
       "1000.0.0"
     ]
-  }
+  },
+  "prepare_command": "TMP_DIR=$(mktemp -d); mv * $TMP_DIR; cp -R \"$TMP_DIR/React\"/* ."
 }

@@ -13,26 +13,26 @@
     "git": "https://github.com/jtreanor/react-native.git",
     "commit": "9ad7fc78733c53f5583a48a240f6850d23913a1c"
   },
-  "source_files": "React/**/*.{c,h,m,mm,S,cpp}",
+  "source_files": "**/*.{c,h,m,mm,S,cpp}",
   "exclude_files": [
-    "React/DevSupport/**/*",
-    "React/Fabric/**/*",
-    "React/Inspector/**/*"
+    "DevSupport/**/*",
+    "Fabric/**/*",
+    "Inspector/**/*"
   ],
   "ios": {
-    "exclude_files": "React/**/RCTTV*.*"
+    "exclude_files": "**/RCTTV*.*"
   },
   "tvos": {
     "exclude_files": [
-      "React/Modules/RCTClipboard*",
-      "React/Views/RCTDatePicker*",
-      "React/Views/RCTPicker*",
-      "React/Views/RCTRefreshControl*",
-      "React/Views/RCTSlider*",
-      "React/Views/RCTSwitch*"
+      "Modules/RCTClipboard*",
+      "Views/RCTDatePicker*",
+      "Views/RCTPicker*",
+      "Views/RCTRefreshControl*",
+      "Views/RCTSlider*",
+      "Views/RCTSwitch*"
     ]
   },
-  "private_header_files": "React/Cxx*/*.h",
+  "private_header_files": "Cxx*/*.h",
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation",
   "header_dir": "React",
   "frameworks": "JavaScriptCore",
@@ -57,9 +57,7 @@
     "yoga": [
       "1000.0.0.React"
     ],
-    "glog": [
-
-    ]
+    "glog": []
   },
   "subspecs": [
     {
@@ -67,7 +65,8 @@
     },
     {
       "name": "CxxBridge",
-      "public_header_files": "React/**/*.{h}"
+      "public_header_files": "**/*.{h}"
     }
-  ]
+  ],
+  "prepare_command": "TMP_DIR=$(mktemp -d); mv * $TMP_DIR; cp -R \"$TMP_DIR/React\"/* ."
 }

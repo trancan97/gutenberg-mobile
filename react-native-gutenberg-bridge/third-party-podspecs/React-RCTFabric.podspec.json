@@ -13,12 +13,12 @@
     "git": "https://github.com/jtreanor/react-native.git",
     "commit": "9ad7fc78733c53f5583a48a240f6850d23913a1c"
   },
-  "source_files": "React/Fabric/**/*.{c,h,m,mm,S,cpp}",
+  "source_files": "Fabric/**/*.{c,h,m,mm,S,cpp}",
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation",
   "exclude_files": [
-    "React/**/tests/*",
-    "React/**/android/*",
-    "React/-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"
+    "**/tests/*",
+    "**/android/*",
+    "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"
   ],
   "header_dir": "React",
   "frameworks": "JavaScriptCore",
@@ -43,5 +43,6 @@
     "Folly/Fabric": [
       "2018.10.22.00"
     ]
-  }
+  },
+  "prepare_command": "TMP_DIR=$(mktemp -d); mv * $TMP_DIR; cp -R \"$TMP_DIR/React\"/* ."
 }

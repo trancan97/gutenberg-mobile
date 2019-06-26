@@ -7,8 +7,9 @@ set -e
 cd "$( dirname $0 )"
 cd ..
 
-# Check for cocoapods
+# Check for cocoapods & jq
 command -v pod > /dev/null || ( echo Cocoapods is required to generate podspecs; exit 1 )
+command -v jq > /dev/null || ( echo jq is required to generate podspecs; exit 1 )
 
 # Change to the React Native directory to get relative paths
 WD=$(pwd)
@@ -27,7 +28,10 @@ do
 
     echo "Generating podspec for $pod with path $path"
     pod ipc spec $podspec > "$TMP_DEST/$pod.podspec.json"
-    ${WD}/bin/process-podspec.rb "$TMP_DEST/$pod.podspec.json" "$path" > "$DEST/$pod.podspec.json"
+    cat "$TMP_DEST/$pod.podspec.json" | jq > "$DEST/$pod.podspec.json"
+
+    prepare_command="TMP_DIR=\$(mktemp -d); mv * \$TMP_DIR; cp -R \"\$TMP_DIR/${path}\"/* ."
+    cat "$TMP_DEST/$pod.podspec.json" | jq --arg CMD "$prepare_command" 'if .prepare_command then .prepare_command = "\($CMD) && \(.prepare_command)" else .prepare_command = "\($CMD)" end' > "$DEST/$pod.podspec.json"
 done
 
 for podspec in $EXTERNAL_PODSPECS

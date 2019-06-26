@@ -27,6 +27,7 @@
     "ios": "9.0",
     "tvos": "9.2"
   },
-  "source_files": "ReactCommon/yoga/yoga/**/*.{cpp,h}",
-  "public_header_files": "ReactCommon/yoga/yoga/{Yoga,YGEnums,YGMacros,YGValue}.h"
+  "source_files": "yoga/**/*.{cpp,h}",
+  "public_header_files": "yoga/{Yoga,YGEnums,YGMacros,YGValue}.h",
+  "prepare_command": "TMP_DIR=$(mktemp -d); mv * $TMP_DIR; cp -R \"$TMP_DIR/ReactCommon/yoga\"/* ."
 }

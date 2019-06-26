@@ -13,6 +13,7 @@
     "git": "https://github.com/jtreanor/react-native.git",
     "commit": "9ad7fc78733c53f5583a48a240f6850d23913a1c"
   },
-  "source_files": "ReactCommon/jsinspector/*.{cpp,h}",
-  "header_dir": "jsinspector"
+  "source_files": "*.{cpp,h}",
+  "header_dir": "jsinspector",
+  "prepare_command": "TMP_DIR=$(mktemp -d); mv * $TMP_DIR; cp -R \"$TMP_DIR/ReactCommon/jsinspector\"/* ."
 }

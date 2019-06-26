@@ -13,8 +13,8 @@
     "git": "https://github.com/jtreanor/react-native.git",
     "commit": "9ad7fc78733c53f5583a48a240f6850d23913a1c"
   },
-  "source_files": "ReactCommon/jsi/**/*.{cpp,h}",
-  "exclude_files": "ReactCommon/jsi/**/test/*",
+  "source_files": "**/*.{cpp,h}",
+  "exclude_files": "**/test/*",
   "frameworks": "JavaScriptCore",
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation",
   "pod_target_xcconfig": {
@@ -26,15 +26,11 @@
     "boost-for-react-native": [
       "1.63.0"
     ],
-    "DoubleConversion": [
-
-    ],
+    "DoubleConversion": [],
     "Folly": [
       "2018.10.22.00"
     ],
-    "glog": [
-
-    ]
+    "glog": []
   },
   "subspecs": [
     {
@@ -46,5 +42,6 @@
         "OTHER_CFLAGS": "$(inherited) -DRN_FABRIC_ENABLED"
       }
     }
-  ]
+  ],
+  "prepare_command": "TMP_DIR=$(mktemp -d); mv * $TMP_DIR; cp -R \"$TMP_DIR/ReactCommon/jsi\"/* ."
 }
