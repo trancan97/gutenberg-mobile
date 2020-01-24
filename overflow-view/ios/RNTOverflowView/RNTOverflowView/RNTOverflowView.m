@@ -10,16 +10,13 @@
 
 @implementation RNTOverflowView
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
-
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    
+    for (UIView *subview in self.subviews) {
+        
+        NSLog(@"%@", NSStringFromCGRect(subview.frame));
+    }
+    
     return [super hitTest:point withEvent:event];
 }
 
