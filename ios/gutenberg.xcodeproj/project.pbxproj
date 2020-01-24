@@ -32,6 +32,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* gutenbergTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* gutenbergTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		40E54E0E0C4243D1947A9498 /* libRNCSlider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F3ECD6334A43BCA1028B5D /* libRNCSlider.a */; };
+		46D7B2B823DB569D00876680 /* libRNTOverflowView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D7B2B723DB568A00876680 /* libRNTOverflowView.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		7E45CC5B218B42E000C0B2AB /* libRNReactNativeGutenbergBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E45CC5A218B42C000C0B2AB /* libRNReactNativeGutenbergBridge.a */; };
 		7E8FA9582301CAB000D007F0 /* libRNDarkMode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8FA9522301CA9E00D007F0 /* libRNDarkMode.a */; };
@@ -254,6 +255,13 @@
 			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
 			remoteInfo = "cxxreact-tvOS";
 		};
+		46D7B2B623DB568A00876680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D7B28623DB568A00876680 /* RNTOverflowView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 46D7B22F23DB54BC00876680;
+			remoteInfo = RNTOverflowView;
+		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -426,6 +434,7 @@
 		32A2662FE92B40E281A5CB2A /* RNCSlider.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCSlider.xcodeproj; path = "../node_modules/@react-native-community/slider/src/ios/RNCSlider.xcodeproj"; sourceTree = "<group>"; };
 		3ADEFEC092CF4D00BEF1019E /* libRNTAztecView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNTAztecView.a; sourceTree = "<group>"; };
 		3D53EF8FEF024C98A7AC9A56 /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
+		46D7B28623DB568A00876680 /* RNTOverflowView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNTOverflowView.xcodeproj; path = "../overflow-view/ios/RNTOverflowView/RNTOverflowView.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		69F3DF692A7C4E5994CD3CBB /* libRNSafeArea.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSafeArea.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -478,6 +487,7 @@
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				7E8FA9582301CAB000D007F0 /* libRNDarkMode.a in Frameworks */,
+				46D7B2B823DB569D00876680 /* libRNTOverflowView.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
@@ -653,6 +663,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		46D7B28723DB568A00876680 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46D7B2B723DB568A00876680 /* libRNTOverflowView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,6 +708,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				46D7B28623DB568A00876680 /* RNTOverflowView.xcodeproj */,
 				7E8FA9292301CA9E00D007F0 /* RNDarkMode.xcodeproj */,
 				91C2E1AE22422C9F00D5E1F5 /* RNTKeyboardAwareScrollView.xcodeproj */,
 				7E45CC55218B42C000C0B2AB /* RNReactNativeGutenbergBridge.xcodeproj */,
@@ -1027,6 +1046,10 @@
 					ProductGroup = 91C2E1AF22422C9F00D5E1F5 /* Products */;
 					ProjectRef = 91C2E1AE22422C9F00D5E1F5 /* RNTKeyboardAwareScrollView.xcodeproj */;
 				},
+				{
+					ProductGroup = 46D7B28723DB568A00876680 /* Products */;
+					ProjectRef = 46D7B28623DB568A00876680 /* RNTOverflowView.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -1219,6 +1242,13 @@
 			fileType = archive.ar;
 			path = libcxxreact.a;
 			remoteRef = 3DAD3EAA1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		46D7B2B723DB568A00876680 /* libRNTOverflowView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNTOverflowView.a;
+			remoteRef = 46D7B2B623DB568A00876680 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
