@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/wordpress-mobile/gutenberg-mobile'
   s.authors          = 'Automattic'
   s.source           = { :git => 'https://github.com/wordpress-mobile/gutenberg-mobile.git' }
-  s.source_files     = 'overflow-view/ios/RNTOverflowView/RNTOverflowView/*.{h,m,swift}'
-  s.public_header_files = 'overflow-view/ios/RNTOverflowView/RNTOverflowView/*.h'
+  s.source_files     = 'react-native-overflow-view/ios/RNTOverflowView/RNTOverflowView/*.{h,m,swift}'
+  s.public_header_files = 'react-native-overflow-view/ios/RNTOverflowView/RNTOverflowView/*.h'
   s.requires_arc     = true
   s.platforms        = { :ios => "11.0" }
   s.swift_version    = '5.0'
