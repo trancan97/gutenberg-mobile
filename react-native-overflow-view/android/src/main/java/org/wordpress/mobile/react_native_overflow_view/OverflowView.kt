@@ -10,11 +10,12 @@ import com.facebook.react.views.view.ReactViewGroup
 class OverflowView(context: Context) : ReactViewGroup(context) {
 
     override fun onInterceptTouchEvent(ev: MotionEvent?): Boolean {
-        return super.onInterceptTouchEvent(ev)
+        val result = super.onInterceptTouchEvent(ev)
+        return result
     }
 
-    override fun getChildVisibleRect(child: View?, r: Rect?, offset: Point?): Boolean {
-        var result = super.getChildVisibleRect(child, r, offset)
+    override fun onTouchEvent(ev: MotionEvent?): Boolean {
+        val result = super.onTouchEvent(ev)
         return result
     }
 }
