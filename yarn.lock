@@ -11526,10 +11526,9 @@ react-native-sass-transformer@^1.1.1:
     prop-types "^15.5.10"
     shaka-player "^2.4.4"
 
-react-native@0.61.5:
+"react-native@git+https://github.com/chipsnyder/react-native.git#feature/android_clip_touches":
   version "0.61.5"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.61.5.tgz#6e21acb56cbd75a3baeb1f70201a66f42600bba8"
-  integrity sha512-MXqE3NoGO0T3dUKIKkIppijBhRRMpfN6ANbhMXHDuyfA+fSilRWgCwYgR/YNCC7ntECoJYikKaNTUBB0DeQy6Q==
+  resolved "git+https://github.com/chipsnyder/react-native.git#86cad7d69099baaaeae10ac7c0912a023101f257"
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@react-native-community/cli" "^3.0.0"

@@ -32,9 +32,9 @@ dependencies {
 
     if (rootProject.ext.buildGutenbergFromSource) {
         println "using gutenberg from source"
-        implementation 'com.facebook.react:react-native:+'
+        implementation project(':ReactAndroid')
     } else {
         def rnVersion = '0.61.5'
-        implementation "com.facebook.react:react-native:${rnVersion}"
+        implementation project(':ReactAndroid')
     }
 }

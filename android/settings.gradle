@@ -14,3 +14,6 @@ include ':react-native-gutenberg-bridge'
 project(':react-native-gutenberg-bridge').projectDir = new File(rootProject.projectDir, '../react-native-gutenberg-bridge/android')
 project(':react-native-overflow-view').projectDir = new File(rootProject.projectDir, '../react-native-overflow-view/android')
 include ':app'
+include ':ReactAndroid'
+project(':ReactAndroid').projectDir = new File(
+        rootProject.projectDir, '../node_modules/react-native/ReactAndroid')
