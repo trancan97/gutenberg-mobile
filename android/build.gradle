@@ -18,7 +18,8 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$gradlePluginVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
-    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" }
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
 }
 
 // Load the "build from source" flag value but default to `true` since this is the demo gutenberg-mobile project so
