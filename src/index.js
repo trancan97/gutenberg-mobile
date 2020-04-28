@@ -53,6 +53,9 @@ const setupLocale = ( locale, extraTranslations ) => {
 
 export class RootComponent extends React.Component {
 	constructor( props ) {
+		const tryingSomething = require( 'tryingSomething' );
+		tryingSomething.logMe();
+
 		super( props );
 		setupLocale( props.locale, props.translations );
 		setupApiFetch();
