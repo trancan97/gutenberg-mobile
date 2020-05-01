@@ -19,7 +19,9 @@ import com.horcrux.svg.SvgPackage;
 
 import org.wordpress.mobile.ReactNativeAztec.ReactAztecPackage;
 import org.wordpress.mobile.ReactNativeGutenbergBridge.GutenbergBridgeJS2Parent;
+import org.wordpress.mobile.ReactNativeGutenbergBridge.RNMedia;
 import org.wordpress.mobile.ReactNativeGutenbergBridge.RNReactNativeGutenbergBridgePackage;
+import org.wordpress.mobile.WPAndroidGlue.Media;
 
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
