@@ -31,12 +31,9 @@
     <string name="gutenberg_native_alt_text" tools:ignore="UnusedResources">Alt Text</string>
     <string name="gutenberg_native_an_unknown_error_occurred_please_try_again" tools:ignore="UnusedResources">An unknown error occurred. Please try again.</string>
     <string name="gutenberg_native_annotations_sidebar" tools:ignore="UnusedResources">Annotations Sidebar</string>
+    <string name="gutenberg_native_block_settings" tools:ignore="UnusedResources">Block Settings</string>
     <!-- translators: title for "Blog" page template -->
     <string name="gutenberg_native_blog" tools:ignore="UnusedResources">Blog</string>
-    <string name="gutenberg_native_border_radius" tools:ignore="UnusedResources">Border Radius</string>
-    <string name="gutenberg_native_border_settings" tools:ignore="UnusedResources">Border Settings</string>
-    <string name="gutenberg_native_button_color_settings_are_coming_soon" tools:ignore="UnusedResources">Button color settings are coming soon.</string>
-    <string name="gutenberg_native_button_link_url" tools:ignore="UnusedResources">Button Link URL</string>
     <string name="gutenberg_native_choose_from_device" tools:ignore="UnusedResources">Choose from device</string>
     <!-- translators: sample content for "Contact" page template -->
     <string name="gutenberg_native_city_10100" tools:ignore="UnusedResources">City, 10100</string>
@@ -59,8 +56,9 @@
     <string name="gutenberg_native_double_tap_to_move_the_block_to_the_left" tools:ignore="UnusedResources">Double tap to move the block to the left</string>
     <string name="gutenberg_native_double_tap_to_move_the_block_to_the_right" tools:ignore="UnusedResources">Double tap to move the block to the right</string>
     <string name="gutenberg_native_double_tap_to_move_the_block_up" tools:ignore="UnusedResources">Double tap to move the block up</string>
+    <string name="gutenberg_native_double_tap_to_open_action_sheet_with_available_options" tools:ignore="UnusedResources">Double tap to open Action Sheet with available options</string>
+    <string name="gutenberg_native_double_tap_to_open_bottom_sheet_with_available_options" tools:ignore="UnusedResources">Double tap to open Bottom Sheet with available options</string>
     <string name="gutenberg_native_double_tap_to_redo_last_change" tools:ignore="UnusedResources">Double tap to redo last change</string>
-    <string name="gutenberg_native_double_tap_to_remove_the_block" tools:ignore="UnusedResources">Double tap to remove the block</string>
     <string name="gutenberg_native_double_tap_to_select" tools:ignore="UnusedResources">Double tap to select</string>
     <string name="gutenberg_native_double_tap_to_select_a_video" tools:ignore="UnusedResources">Double tap to select a video</string>
     <string name="gutenberg_native_double_tap_to_select_an_image" tools:ignore="UnusedResources">Double tap to select an image</string>
@@ -112,19 +110,18 @@ translators: sample content for "Services" page template -->
     <!-- translators: sample content for "Contact" page template -->
     <string name="gutenberg_native_let_s_talk_don_t_hesitate_to_reach_out_with_the_contact_informati" tools:ignore="UnusedResources">Let\'s talk 👋 Don\'t hesitate to reach out with the contact information below, or send a message using the form.</string>
     <string name="gutenberg_native_link_inserted" tools:ignore="UnusedResources">Link inserted</string>
-    <string name="gutenberg_native_link_settings" tools:ignore="UnusedResources">Link Settings</string>
     <string name="gutenberg_native_link_text" tools:ignore="UnusedResources">Link text</string>
     <string name="gutenberg_native_link_to" tools:ignore="UnusedResources">Link To</string>
-    <string name="gutenberg_native_move_block_down" tools:ignore="UnusedResources">Move block down</string>
+    <string name="gutenberg_native_move_block_down" tools:ignore="UnusedResources">Move Block Down</string>
     <!-- translators: accessibility text. %1: current block position (number). %2: next block position (number) -->
     <string name="gutenberg_native_move_block_down_from_row_1_s_to_row_2_s" tools:ignore="UnusedResources">Move block down from row %1$s to row %2$s</string>
-    <string name="gutenberg_native_move_block_left" tools:ignore="UnusedResources">Move block left</string>
+    <string name="gutenberg_native_move_block_left" tools:ignore="UnusedResources">Move Block Left</string>
     <!-- translators: accessibility text. %1: current block position (number). %2: next block position (number) -->
     <string name="gutenberg_native_move_block_left_from_position_1_s_to_position_2_s" tools:ignore="UnusedResources">Move block left from position %1$s to position %2$s</string>
-    <string name="gutenberg_native_move_block_right" tools:ignore="UnusedResources">Move block right</string>
+    <string name="gutenberg_native_move_block_right" tools:ignore="UnusedResources">Move Block Right</string>
     <!-- translators: accessibility text. %1: current block position (number). %2: next block position (number) -->
     <string name="gutenberg_native_move_block_right_from_position_1_s_to_position_2_s" tools:ignore="UnusedResources">Move block right from position %1$s to position %2$s</string>
-    <string name="gutenberg_native_move_block_up" tools:ignore="UnusedResources">Move block up</string>
+    <string name="gutenberg_native_move_block_up" tools:ignore="UnusedResources">Move Block Up</string>
     <!-- translators: accessibility text. %1: current block position (number). %2: next block position (number) -->
     <string name="gutenberg_native_move_block_up_from_row_1_s_to_row_2_s" tools:ignore="UnusedResources">Move block up from row %1$s to row %2$s</string>
     <string name="gutenberg_native_move_image_backward" tools:ignore="UnusedResources">Move Image Backward</string>
@@ -156,8 +153,6 @@ translators: sample content for "Services" page template -->
     <!-- translators: sample content for "Portfolio" page template -->
     <string name="gutenberg_native_project_name" tools:ignore="UnusedResources">Project Name</string>
     <string name="gutenberg_native_remove_annotations" tools:ignore="UnusedResources">Remove annotations</string>
-    <!-- translators: accessibility text. %s: current block position (number). -->
-    <string name="gutenberg_native_remove_block_at_row_s" tools:ignore="UnusedResources">Remove block at row %s</string>
     <string name="gutenberg_native_remove_image" tools:ignore="UnusedResources">Remove Image</string>
     <string name="gutenberg_native_replace_current_block" tools:ignore="UnusedResources">Replace Current Block</string>
     <string name="gutenberg_native_reset_block" tools:ignore="UnusedResources">Reset Block</string>
